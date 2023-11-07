@@ -1,19 +1,13 @@
-import React from 'react'
-
-const Statistics = ({good, neutral, bad, positivePercentage}) => {
+const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
   return (
-    <div></div>
+    <div>
+          <p>Good { good }</p>
+          <p>Neutral { neutral }</p>
+          <p>Bad {bad}</p>
+          <p>Total {total}</p>
+          <p>Positive feedback {positivePercentage}%</p>
+    </div>
   )
 }
 
-export default Statistics
-
-
-/**
- *  <div>
-          <p>Statistic:</p>
-          <p>Good: {this.state.good}</p>
-          <p>Neutral: {this.state.neutral}</p>
-          <p>Bad: {this.state.bad}</p>
-        </div>
- */
+export default Statistics;
